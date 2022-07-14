@@ -1,0 +1,85 @@
+/*Content component*/
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+/*SearchForm component*/
+.searchForm {
+    min-width: 300px;
+    width: 300px;
+    padding: 0 20px 10px;
+}
+.additionalParams {
+    display: flex;
+    flex-direction: column;
+}
+.additionalParams .title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+.additionalParams .paramsWrapper {
+    min-height: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+.methodPickersWrapper {
+    display: inline-block;
+    font-size: 12px;
+}
+.methodPicker {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.methodPicker:nth-child(even) {
+    margin: 0 5px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    transition: 500ms;
+    background: linear-gradient(to right, rgba(65, 191, 255, 0), rgb(0 0 0 / 22%), rgba(65, 191, 255, 0));
+    transform: translate(0px, 20px);
+}
+
+/*Info component*/
+.dataBlockHeader {
+    width: 100%;
+    background: #D2E7BA;
+    padding: 10px;
+}
+.dataBlockContent {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.info {
+    width: 100%;
+    padding: 10px 20px;
+}
+.dataBlock {
+    margin-top: 10px;
+    box-shadow: 0 0 10px -5px black;
+}
+.dataItemsWrapper {
+    display: flex;
+}
+.dataItemsWrapper span:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchForm {
+        margin-bottom: 20px;
+    }
+    .line {
+        opacity: 1;
+    }
+}

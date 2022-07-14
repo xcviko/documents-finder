@@ -1,0 +1,71 @@
+/*Input component*/
+.inputWrapper {
+    font-size: 14px;
+}
+.inputWrapper .header {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+/*.inputWrapper .header:first-child {
+    margin-top: 0;
+}*/
+.inputWrapper label {
+
+}
+.input {
+
+}
+.input input {
+    width: 80%;
+}
+.inputWrapper .warning {
+    color: crimson;
+    font-size: 12px;
+    margin: 5px 0 10px;
+}
+.removeBtn {
+    height: 80%;
+    aspect-ratio : 1 / 1;
+    border: none;
+    margin-left: 10px;
+}
+.removeBtn:active {
+    background: #ff8199;
+}
+
+/*Paginator component*/
+.paginator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pages {
+    display: flex;
+}
+.page {
+    margin: 0 3px;
+}
+.active {
+    border: 1px solid #00000059;
+}
+.navigationBtn {
+
+}
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .paginator {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paginator .navigationBtn:first-child {
+        margin-bottom: 5px;
+    }
+    .paginator .navigationBtn:last-child {
+        margin-top: 5px;
+    }
+}
